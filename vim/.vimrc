@@ -1,1 +1,4 @@
-/home/mohamed/scripts/./.vimrc
+set number
+set relativenumber
+set expandtab
+set ignorecase
