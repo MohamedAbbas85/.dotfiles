@@ -1,0 +1,11 @@
+# mute volume
+XF86AudioMute
+        /usr/bin/amixer -q set Master toggle; pkill -RTMIN+30 dwmblocks
+ 
+# lower volume
+XF86AudioLowerVolume
+        /usr/bin/amixer -qM set Master 5%- unmute; pkill -RTMIN+30 dwmblocks
+ 
+# louder volume
+XF86AudioRaiseVolume
+        /usr/bin/amixer -qM set Master 5%+ unmute; pkill -RTMIN+30 dwmblocks
