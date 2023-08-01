@@ -126,3 +126,9 @@ export PATH=$PATH:/opt/node-v18.12.1-linux-x64/bin
 
 source ~/git-prompt.sh
 source ~/scripts/git-prompt-config.sh
+
+# xbps
+alias u='sudo xbps-install -Su'
+alias i='sudo xbps-install -S'
+alias q='xbps-query -Rs'
+alias r='sudo xbps-remove'
