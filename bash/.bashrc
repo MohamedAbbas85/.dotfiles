@@ -132,3 +132,5 @@ alias u='sudo xbps-install -Su'
 alias i='sudo xbps-install -S'
 alias q='xbps-query -Rs'
 alias r='sudo xbps-remove'
+
+alias v='vim'
