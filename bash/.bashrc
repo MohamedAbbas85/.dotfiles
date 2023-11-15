@@ -123,14 +123,20 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/opt/node-v18.12.1-linux-x64/bin
+export PATH=$PATH:~/.bin
 
 source ~/git-prompt.sh
 source ~/scripts/git-prompt-config.sh
 
+#exports
+export BROWSER="firefox"
+
 # xbps
-alias u='sudo xbps-install -Su'
-alias i='sudo xbps-install -S'
+alias u='doas -- xbps-install -Su'
+alias i='doas -- xbps-install -S'
 alias q='xbps-query -Rs'
-alias r='sudo xbps-remove'
+alias r='doas xbps-remove'
 
 alias v='vim'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
