@@ -2,12 +2,15 @@ set number
 set relativenumber
 set expandtab
 set ignorecase
+set clipboard=unnamedplus
+
 colorscheme desert
 
 "***************************************
 "*************Mappings******************
 "***************************************
 nmap <C-F> :Files<CR>
+nmap <C-B> :Buffers<CR>
 
 "****************************************
 "*************Plugins********************
@@ -51,6 +54,8 @@ Plug 'junegunn/fzf.vim'
 
 " Unmanaged plugin (manually installed and updated)
 " Plug '~/my-prototype-plugin'
+
+Plug 'mattn/emmet-vim'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
