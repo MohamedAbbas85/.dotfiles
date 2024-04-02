@@ -4,6 +4,12 @@ super + w
 super + c
         code-oss
 
+super + f
+	nemo
+
+super + n
+	/opt/Notable-1.8.4.AppImage
+
 super + shift + q
         doas poweroff
 
