@@ -127,12 +127,13 @@ export PATH=$PATH:~/.bin
 
 source ~/git-prompt.sh
 source ~/scripts/git-prompt-config.sh
+source /usr/share/bash-completion/completions/git
 
 #exports
 export BROWSER="firefox"
 
 # xbps
-alias u='doas -- xbps-install -Su'
+alias u='doas xbps-install -u xbps && doas -- xbps-install -Su'
 alias i='doas -- xbps-install -S'
 alias q='xbps-query -Rs'
 alias r='doas xbps-remove'
