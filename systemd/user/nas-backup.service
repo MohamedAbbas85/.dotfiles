@@ -1,0 +1,8 @@
+[Unit]
+Description=Trigger HomeServer Borg Backup to Local HDD
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.dotfiles/bin/trigger-borg-backup.sh
